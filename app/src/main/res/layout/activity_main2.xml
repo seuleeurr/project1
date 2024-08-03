@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#8A7DBC">
+
+    <TextView
+        android:id="@+id/drd"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Hello, World!"
+        android:layout_marginTop="30dp"
+        android:paddingStart="4dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:id="@+id/dtd"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/drd"
+        tools:layout_editor_absoluteX="0dp"
+        android:hint="성별을 입력하세요."
+        android:background="@drawable/dudtv"
+        android:paddingStart="140dp"/>
+
+    <EditText
+        android:id="@+id/dyd"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/dtd"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:hint="직업을 입력하세요."
+        android:background="@drawable/dudtv"
+        android:paddingStart="140dp"/>
+
+    <EditText
+        android:id="@+id/dud"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/dyd"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        android:hint="이름을 입력하세요."
+        android:background="@drawable/dudtv"
+        android:paddingStart="140dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

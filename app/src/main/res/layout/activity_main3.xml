@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BB99D3"
+    tools:context=".MainActivity3">
+    <TextView
+        android:id="@+id/puppy1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="리니어 레이아웃에 대해"
+        android:gravity="bottom"
+        android:textSize="20sp"
+        android:background="#00ff00"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/puppy2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/puppy1"
+        android:background="#ffff00"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ey1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"/>
+        <EditText
+            android:id="@+id/ey2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"/>
+        <Button
+            android:id="@+id/ey3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@+id/puppy2">
+        <CheckBox
+            android:id="@+id/chek1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#ff00ff"
+            android:text="헤헤헤"/>
+        <CheckBox
+            android:id="@+id/chek2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textColor="#ff00ff"
+            android:text="하하하"/>
+
+        <Button
+            android:id="@+id/chek3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
